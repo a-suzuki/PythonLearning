@@ -12,8 +12,8 @@ for line in lines:
     response = word_list[1]
     bot_dict[key] = response
 
-while True:
-    command = input('pybot> ')
+def pybot(command):
+    #command = input('pybot> ')
     response = ''
     for message in bot_dict:
         if message in command:
@@ -28,5 +28,5 @@ while True:
     print(response)
     return response
 
-    if 'さようなら' in command:
-        break
+    #if 'さようなら' in command:
+    #    break
